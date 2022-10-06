@@ -10,12 +10,12 @@ phases:
   build:
     commands:
       - echo Build started on `date`
-      - mvn install
+      - maven install 
   post_build:
     commands:
       - echo Build completed on `date`
       - zip -r JavaWeb.zip target/JavaWeb.war appspec.yml scripts/*
-      - aws s3 cp JavaWeb.zip s3://demo-4-codedeploy/
+      - aws s3 cp JavaWeb.zip s3://mashokc.77/
 artifacts:
   files:
     - target/JavaWeb.war
