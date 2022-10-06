@@ -15,7 +15,6 @@ phases:
     commands:
       - echo Build completed on `date`
       - zip -r JavaWeb.zip target/JavaWeb.war appspec.yml scripts/*
-      - aws s3 cp JavaWeb.zip s3://mashokc.77/
 artifacts:
   files:
     - target/JavaWeb.war
