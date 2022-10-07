@@ -1,4 +1,4 @@
-version: 0.1
+version: 0.2
 
 phases:
   install:
@@ -10,7 +10,7 @@ phases:
   build:
     commands:
       - echo Build started on `date`
-      - sudo mvn install
+      - mvn install -y
   post_build:
     commands:
       - echo Build completed on `date`
