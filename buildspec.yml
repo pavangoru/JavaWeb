@@ -6,7 +6,7 @@ phases:
   build:
     commands:
       - mvn -v
-      - mvn install
+      - mvn clean install 
       - echo Nothing to do in the install phase...
   post_build:
     commands:
